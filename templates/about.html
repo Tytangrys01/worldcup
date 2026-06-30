@@ -1,0 +1,45 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="{% static './about.css' %}" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1></h1>
+
+      <nav id="nav-menu">
+        <button class="nav-close" id="nav-close" aria-label="Close menu">
+          ×
+        </button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="project.html">PROJECTS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- HAMBURGER MENU ICON -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <div class="about">
+      <h2>About Me</h2>
+      <span class="line"></span>
+      <p>
+        I'm a front-end developer who love creating clean and user friendly
+        interface using Figma, HTML, CSS and JavaScript. You can always call me
+        TyTaN.
+      </p>
+    </div>
+
+    <script src="{% static 'about.js' %}">
+    </script>
+  </body>
+</html>

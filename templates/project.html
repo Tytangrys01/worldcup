@@ -1,0 +1,161 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="{% static './project.css' %}" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1></h1>
+      <nav id="nav-menu">
+        <button class="nav-close" id="nav-close" aria-label="Close menu">
+          ×
+        </button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <!-- HAMBURGER MENU ICON -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <div class="project">
+      <h2>PROJECTS</h2>
+      <span class="line"></span>
+    </div>
+    <section class="project-list">
+      <div class="project-item">
+        <img src="{% static './ptf image/bento-grid.jpg' %}" alt="Bento Grid thumbnail" />
+        <p>Bento Grid</p>
+        <div class="project-buttons">
+          <button
+            type="button"
+            class="view-image-btn"
+            data-view-src="./ptf image/preview/bento-grid.jpg"
+          >
+            View Project
+          </button>
+          <button>
+            <a href="https://tytangrys01.github.io/bento_grid/" target="_blank"
+              >Live Demo</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="{% static './ptf image/contact-form.jpg' %}" alt="Contact Form thumbnail" />
+        <p>Contact Form</p>
+        <div class="project-buttons">
+          <button
+            type="button"
+            class="view-image-btn"
+            data-view-src="./ptf image/preview/contact-form.jpg"
+          >
+            View Project
+          </button>
+          <button>
+            <a
+              href="https://tytangrys01.github.io/contact_form/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="{% static './ptf image/new recipe.jpg' %}" alt="New Recipe thumbnail" />
+        <p>New Recipe</p>
+        <div class="project-buttons">
+          <button
+            type="button"
+            class="view-image-btn"
+            data-view-src="./ptf image/preview/new-reciepe.jpg"
+          >
+            View Project
+          </button>
+          <button>
+            <a href="https://tytangrys01.github.io/recipe/" target="_blank"
+              >Live Demo</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="{% static './ptf image/news.jpeg' %}" alt="News Homepage thumbnail" />
+        <p>News Homepage</p>
+        <div class="project-buttons">
+          <button
+            type="button"
+            class="view-image-btn"
+            data-view-src="./ptf image/preview/news.jpeg"
+          >
+            View Project
+          </button>
+          <button>
+            <a
+              href="https://tytangrys01.github.io/news_hompage/"
+              target="_blank"
+              >Live Demo</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="{% static './ptf image/social-link.jpg' %}" alt="Social Link thumbnail" />
+        <p>Social Link</p>
+        <div class="project-buttons">
+          <button
+            type="button"
+            class="view-image-btn"
+            data-view-src="./ptf image/preview/social-link.jpg"
+          >
+            View Project
+          </button>
+          <button>
+            <a href="https://tytangrys01.github.io/social_link/" target="_blank"
+              >Live Demo</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="{% static './ptf image/sunnyday.jpg' %}" alt="Sunny Day thumbnail" />
+        <p>Sunny Side</p>
+        <div class="project-buttons">
+          <button
+            type="button"
+            class="view-image-btn"
+            data-view-src="./ptf image/preview/sunny.jpg"
+          >
+            View Project
+          </button>
+          <button>
+            <a href="https://tytangrys01.github.io/sunnyday/" target="_blank"
+              >Live Demo</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="image-modal" id="image-modal">
+      <div class="image-modal-content">
+        <button class="modal-close" id="modal-close" aria-label="Close image">
+          ×
+        </button>
+        <img src="" alt="" id="modal-image" />
+      </div>
+    </div>
+
+    <script src="{% static './project.js' %}"></script>
+  </body>
+</html>
